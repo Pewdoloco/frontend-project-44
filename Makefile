@@ -9,3 +9,6 @@ up:
 # Команда для проверки публикации пакета без фактической отправки
 publish:
 	npm	publish --dry-run
+
+lint:
+	npx eslint .
