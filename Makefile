@@ -4,7 +4,7 @@ install:
 
 #Запуск проекта
 up: 
-	node bit/brain-games.js
+	node bin/brain-games.js
 
 # Команда для проверки публикации пакета без фактической отправки
 publish:
