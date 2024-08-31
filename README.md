@@ -11,4 +11,8 @@
 
 [![asciicast](https://asciinema.org/a/cpQvcO4KPX5vLX2MIpr83FdO4.svg)](https://asciinema.org/a/cpQvcO4KPX5vLX2MIpr83FdO4)
 
+Вот пример установки и запуска игры `brain-gcd`:
+
+[![asciicast](https://asciinema.org/a/nDv6j1xVV7ZD63zGRfnJg2MiN.svg)](https://asciinema.org/a/nDv6j1xVV7ZD63zGRfnJg2MiN)
+
 **[![Maintainability](https://api.codeclimate.com/v1/badges/486c0c248084c32d14fb/maintainability)](https://codeclimate.com/github/Pewdoloco/frontend-project-44/maintainability)**
