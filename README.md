@@ -19,4 +19,11 @@
 
 [![asciicast](https://asciinema.org/a/cKGzHFjdlVDjKRYjKkIK8jMxx.svg)](https://asciinema.org/a/cKGzHFjdlVDjKRYjKkIK8jMxx)
 
+Вот пример установки и запуска игры `brain-prime`:
+
+[![asciicast](https://asciinema.org/a/ksLpLcyB2iTvXuhuSVHCOwbig.svg)](https://asciinema.org/a/ksLpLcyB2iTvXuhuSVHCOwbig)
+
 **[![Maintainability](https://api.codeclimate.com/v1/badges/486c0c248084c32d14fb/maintainability)](https://codeclimate.com/github/Pewdoloco/frontend-project-44/maintainability)**
+
+
+
