@@ -15,4 +15,8 @@
 
 [![asciicast](https://asciinema.org/a/nDv6j1xVV7ZD63zGRfnJg2MiN.svg)](https://asciinema.org/a/nDv6j1xVV7ZD63zGRfnJg2MiN)
 
+Вот пример установки и запуска игры `brain-progression`:
+
+[![asciicast](https://asciinema.org/a/cKGzHFjdlVDjKRYjKkIK8jMxx.svg)](https://asciinema.org/a/cKGzHFjdlVDjKRYjKkIK8jMxx)
+
 **[![Maintainability](https://api.codeclimate.com/v1/badges/486c0c248084c32d14fb/maintainability)](https://codeclimate.com/github/Pewdoloco/frontend-project-44/maintainability)**

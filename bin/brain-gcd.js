@@ -8,7 +8,6 @@ const {userNameGreeting, gretting, userName} = userNameFunc();
 console.log(gretting);
 console.log('Find the greatest common divisor of given numbers.');
 
-
 const getRandomNumber = () => {
     return Math.floor(Math.random() * 100);
 };
@@ -38,6 +37,7 @@ while (correctAnswers < 3) {
             numberOne = temp;
         }
     }
+    
     let isEven = numberOne === 0 ? numberTwo : numberOne;
 
     if (Number(userAnswer) === isEven) {
