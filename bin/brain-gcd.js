@@ -1,16 +1,14 @@
 #!/usr/bin/env node
 
-import readlineSync from 'readline-sync';
-import { userNameFunc, welcomeFunc } from '../src/cli.js';
+import readlineSync from "readline-sync";
+import { userNameFunc, welcomeFunc } from "../src/cli.js";
 
 console.log(welcomeFunc());
 const { gretting, userName } = userNameFunc();
 console.log(gretting);
-console.log('Find the greatest common divisor of given numbers.');
+console.log("Find the greatest common divisor of given numbers.");
 
-const getRandomNumber = () => {
-  return Math.floor(Math.random() * 100);
-};
+const getRandomNumber = () => Math.floor(Math.random() * 100);
 
 const generateBothNumber = () => {
   const numberOne = getRandomNumber();
@@ -25,7 +23,7 @@ let correctAnswers = 0;
 while (correctAnswers < 3) {
   let [numberOne, numberTwo] = generateBothNumber();
   const userAnswer = readlineSync.question(
-    `Question: ${numberOne} ${numberTwo}\nYour answer: `,
+    `Question: ${numberOne} ${numberTwo}\nYour answer: `
   );
 
   if (numberOne > numberTwo) {
@@ -45,11 +43,11 @@ while (correctAnswers < 3) {
   const isEven = numberOne === 0 ? numberTwo : numberOne;
 
   if (Number(userAnswer) === isEven) {
-    console.log('Correct!');
+    console.log("Correct!");
     correctAnswers += 1;
   } else {
     console.log(
-      `'${userAnswer}' is wrong answer ;(. Correct answer was '${isEven}'.`,
+      `'${userAnswer}' is wrong answer ;(. Correct answer was '${isEven}'.`
     );
     console.log(`Let's try again, ${userName}!`);
     correctAnswers = 0;

@@ -1,8 +1,6 @@
 import readlineSync from 'readline-sync';
 
-const welcomeFunc = () => {
-  return 'Welcome to the Brain Games!';
-};
+const welcomeFunc = () => 'Welcome to the Brain Games!';
 
 const userNameFunc = () => {
   const userNameGreeting = readlineSync.question('May I have your name? ');

@@ -1,5 +1,4 @@
 import globals from 'globals';
-import pluginJs from '@eslint/js';
 import js from '@eslint/js';
 
 export default [
@@ -8,13 +7,13 @@ export default [
   js.configs.recommended,
   {
     rules: {
-      'no-unused-vars': 'warn', 
-      'no-undef': 'warn', 
-      'quotes': ['error', 'single'], 
-      'prefer-const': 'error', 
-      'comma-dangle': ['error', 'always-multiline'], 
-      'no-useless-concat': 'error', 
-      'prefer-template': 'error', 
+      'no-unused-vars': 'warn',
+      'no-undef': 'warn',
+      'quotes': ['error','single'],
+      'prefer-const': 'error',
+      'comma-dangle': ['error','always-multiline'],
+      'no-useless-concat': 'error',
+      'prefer-template': 'error',
     },
   },
 ];
