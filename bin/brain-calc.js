@@ -1,17 +1,17 @@
 #!/usr/bin/env node
 
-import readlineSync from "readline-sync";
-import { userNameFunc, welcomeFunc } from "../src/cli.js";
+import readlineSync from 'readline-sync';
+import { userNameFunc, welcomeFunc } from '../src/cli.js';
 
 console.log(welcomeFunc());
-const { userNameGreeting, gretting, userName } = userNameFunc();
+const { gretting, userName } = userNameFunc();
 console.log(gretting);
-console.log("What is the result of the expression?");
+console.log('What is the result of the expression?');
 
 const operations = {
-  "+": (a, b) => a + b,
-  "-": (a, b) => a - b,
-  "*": (a, b) => a * b,
+  '+': (a, b) => a + b,
+  '-': (a, b) => a - b,
+  '*': (a, b) => a * b,
 };
 
 const getRandomOperation = () => {
@@ -22,23 +22,23 @@ const getRandomOperation = () => {
 let correctAnswers = 0;
 while (correctAnswers < 3) {
   const randomOperation = getRandomOperation();
-  let numberOne = Math.floor(Math.random() * 100);
-  let numberTwo = Math.floor(Math.random() * 100);
-  const operation = numberOne + " " + randomOperation + " " + numberTwo;
+  const numberOne = Math.floor(Math.random() * 100);
+  const numberTwo = Math.floor(Math.random() * 100);
+  const operation = `${numberOne} ${randomOperation} ${numberTwo}`;
   const result = operations[randomOperation](numberOne, numberTwo);
 
-  let userAnswer = readlineSync.question(
-    "Question: " + operation + "\n" + "Your answer: "
+  const userAnswer = readlineSync.question(
+    `Question: ${operation}\nYour answer: `,
   );
 
   const isEven = result;
 
   if (Number(userAnswer) === isEven) {
-    console.log("Correct!");
+    console.log('Correct!');
     correctAnswers += 1;
   } else {
     console.log(
-      `'${userAnswer}' is wrong answer ;(. Correct answer was '${isEven}'.`
+      `'${userAnswer}' is wrong answer ;(. Correct answer was '${isEven}'.`,
     );
     console.log(`Let's try again, ${userName}!`);
     correctAnswers = 0;

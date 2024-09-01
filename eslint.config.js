@@ -1,17 +1,20 @@
-import globals from "globals";
-import pluginJs from "@eslint/js";
-import js from "@eslint/js";
+import globals from 'globals';
+import pluginJs from '@eslint/js';
+import js from '@eslint/js';
 
 export default [
   { languageOptions: { globals: globals.browser } },
   pluginJs.configs.recommended,
-
   js.configs.recommended,
-
   {
     rules: {
-      "no-unused-vars": "warn",
-      "no-undef": "warn",
+      'no-unused-vars': 'warn', 
+      'no-undef': 'warn', 
+      'quotes': ['error', 'single'], 
+      'prefer-const': 'error', 
+      'comma-dangle': ['error', 'always-multiline'], 
+      'no-useless-concat': 'error', 
+      'prefer-template': 'error', 
     },
   },
 ];
