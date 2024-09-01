@@ -1,18 +1,18 @@
 #!/usr/bin/env node
 
-import readlineSync from "readline-sync";
-import { userNameFunc, welcomeFunc } from "../src/cli.js";
-import { handleGameResult, checkForVictory } from "../src/gameUtils.js";
+import readlineSync from 'readline-sync';
+import { userNameFunc, welcomeFunc } from '../src/cli.js';
+import { handleGameResult, checkForVictory } from '../src/gameUtils.js';
 
 console.log(welcomeFunc());
 const { gretting, userName } = userNameFunc();
 console.log(gretting);
-console.log("What is the result of the expression?");
+console.log('What is the result of the expression?');
 
 const operations = {
-  "+": (a, b) => a + b,
-  "-": (a, b) => a - b,
-  "*": (a, b) => a * b,
+  '+': (a, b) => a + b,
+  '-': (a, b) => a - b,
+  '*': (a, b) => a * b,
 };
 
 const getRandomOperation = () => {
@@ -29,14 +29,14 @@ while (correctAnswers < 3) {
   const result = operations[randomOperation](numberOne, numberTwo);
 
   const userAnswer = readlineSync.question(
-    `Question: ${operation}\nYour answer: `
+    `Question: ${operation}\nYour answer: `,
   );
 
   correctAnswers = handleGameResult(
     userAnswer,
     result,
     userName,
-    correctAnswers
+    correctAnswers,
   );
   if (correctAnswers === 0) break;
 
