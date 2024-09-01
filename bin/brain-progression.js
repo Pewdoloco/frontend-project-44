@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 
-import readlineSync from "readline-sync";
-import { userNameFunc, welcomeFunc } from "../src/cli.js";
+import readlineSync from 'readline-sync';
+import { userNameFunc, welcomeFunc } from '../src/cli.js';
 
 console.log(welcomeFunc());
 const { gretting, userName } = userNameFunc();
 console.log(gretting);
-console.log("What number is missing in the progression?");
+console.log('What number is missing in the progression?');
 
 const getRandomNumber = () => {
   const progression = [];
@@ -24,19 +24,19 @@ while (correctAnswers < 3) {
   const progression = getRandomNumber();
   const hiddenIndex = Math.floor(Math.random() * progression.length);
   const correctAnswer = progression[hiddenIndex];
-  progression[hiddenIndex] = "..";
+  progression[hiddenIndex] = '..';
 
-  const question = progression.join(" ");
+  const question = progression.join(' ');
   const userAnswer = readlineSync.question(
-    `Question: ${question}\nYour answer: `
+    `Question: ${question}\nYour answer: `,
   );
 
   if (Number(userAnswer) === correctAnswer) {
-    console.log("Correct!");
+    console.log('Correct!');
     correctAnswers += 1;
   } else {
     console.log(
-      `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`
+      `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`,
     );
     console.log(`Let's try again, ${userName}!`);
     correctAnswers = 0;
