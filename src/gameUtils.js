@@ -7,13 +7,12 @@ const handleGameResult = (
   if (Number(userAnswer) === correctAnswer) {
     console.log('Correct!');
     return correctAnswers + 1;
-  } else {
-    console.log(
-      `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`,
-    );
-    console.log(`Let's try again, ${userName}!`);
-    return 0; // Возвращаем 0, чтобы сбросить количество правильных ответов
   }
+  console.log(
+    `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`,
+  );
+  console.log(`Let's try again, ${userName}!`);
+  return 0;
 };
 
 const checkForVictory = (correctAnswers, userName) => {
