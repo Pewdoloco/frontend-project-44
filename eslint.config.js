@@ -14,7 +14,7 @@ export default [
       'prefer-template': 'error',
       'arrow-body-style': ['error', 'as-needed'],
       'no-plusplus': 'error',
-      'spaced-comment': ['error', 'always'], 
+      'spaced-comment': ['error', 'always'],
       'no-trailing-spaces': 'error',
       'quote-props': ['error', 'as-needed'],
       'comma-spacing': ['error', { before: false, after: true }],
