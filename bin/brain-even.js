@@ -3,6 +3,11 @@
 import readlineSync from "readline-sync";
 import { userNameFunc, welcomeFunc } from "../src/cli.js";
 
+console.log(welcomeFunc());
+const { userNameGreeting, gretting, userName } = userNameFunc();
+console.log(gretting);
+console.log('Answer "yes" if the number is even, otherwise answer "no"');
+
 const setQuestion = () => {
   let randomNumber = Math.floor(Math.random() * 100);
   let userAnswer = readlineSync.question(
@@ -10,10 +15,6 @@ const setQuestion = () => {
   );
   return { randomNumber, userAnswer };
 };
-
-console.log(welcomeFunc());
-const { userNameGreeting, gretting, userName } = userNameFunc();
-console.log('Answer "yes" if the number is even, otherwise answer "no"');
 
 let correctAnswers = 0;
 while (correctAnswers < 3) {

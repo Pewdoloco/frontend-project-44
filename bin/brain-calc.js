@@ -5,6 +5,7 @@ import { userNameFunc, welcomeFunc } from "../src/cli.js";
 
 console.log(welcomeFunc());
 const { userNameGreeting, gretting, userName } = userNameFunc();
+console.log(gretting);
 console.log("What is the result of the expression?");
 
 const operations = {
