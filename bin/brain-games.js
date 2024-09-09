@@ -1,5 +1,9 @@
 #!/usr/bin/env node
-import { userGrettingNameFunc } from '../src/cli.js';
+import { userGrettingNameFunc, welcomeFunc } from '../src/cli.js';
 
-console.log('Welcome to the Brain Games!');
-console.log(userGrettingNameFunc());
+const startBrainGames = () => {
+    console.log(welcomeFunc());
+    console.log(userGrettingNameFunc());
+};
+
+startBrainGames();
