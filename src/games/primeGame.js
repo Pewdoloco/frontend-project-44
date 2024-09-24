@@ -1,9 +1,8 @@
 import gameEngine from "../gameEngine.js";
+import { getRandomNumber } from "../gameUtils.js";
 
 const description =
   'Answer "yes" if given number is prime. Otherwise answer "no"';
-
-const getRandomNumber = () => Math.floor(Math.random() * 100) + 1;
 
 const isPrime = (num) => {
   if (num <= 1) return false;

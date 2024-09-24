@@ -26,7 +26,10 @@ const gameEngine = (description, generateQuestionAndAnswer) => {
       return;
     }
   }
-  console.log(`Congratulations, ${userName}!`);
+
+  if (correctAnswers === roundsToWin) {
+    console.log(`Congratulations, ${userName}!`);
+  }
 };
 
 export default gameEngine;

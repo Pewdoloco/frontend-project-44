@@ -1,4 +1,5 @@
 import gameEngine from "../gameEngine.js";
+import { getRandomNumber } from "../gameUtils.js";
 
 const description = "What is the result of the expression?";
 const operations = {
@@ -7,16 +8,11 @@ const operations = {
   "*": (a, b) => a * b,
 };
 
-const getRandomNumber = () => Math.floor(Math.random() * 100);
-const getRandomOperation = () => {
-  const keys = Object.keys(operations);
-  return keys[Math.floor(Math.random() * keys.length)];
-};
-
 const generateQuestionAndAnswer = () => {
   const numberOne = getRandomNumber();
   const numberTwo = getRandomNumber();
-  const operation = getRandomOperation();
+  const keys = Object.keys(operations);
+  const operation = keys[Math.floor(Math.random() * keys.length)];
   const question = `${numberOne} ${operation} ${numberTwo}`;
   const correctAnswer = String(operations[operation](numberOne, numberTwo));
   return { question, correctAnswer };

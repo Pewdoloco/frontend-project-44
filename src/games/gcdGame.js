@@ -1,8 +1,7 @@
 import gameEngine from "../gameEngine.js";
+import { getRandomNumber } from "../gameUtils.js";
 
 const description = "Find the greatest common divisor of given numbers";
-
-const getRandomNumber = () => Math.floor(Math.random() * 100);
 
 const findGcd = (numberOne, numberTwo) => {
   while (numberTwo !== 0) {
