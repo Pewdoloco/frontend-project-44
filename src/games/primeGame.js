@@ -1,5 +1,5 @@
 import gameEngine from '../gameEngine.js';
-import { getRandomNumber } from '../gameUtils.js';
+import getRandomNumber from '../gameUtils.js';
 
 const description =
   'Answer "yes" if given number is prime. Otherwise answer "no"';
