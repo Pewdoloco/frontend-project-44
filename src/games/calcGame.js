@@ -12,7 +12,7 @@ const generateQuestionAndAnswer = () => {
   const numberOne = getRandomNumber();
   const numberTwo = getRandomNumber();
   const keys = Object.keys(operations);
-  const operation = keys[getRandomNumber()];
+  const operation = keys[getRandomNumber(0, keys.length - 1))];
   const question = `${numberOne} ${operation} ${numberTwo}`;
   const correctAnswer = String(operations[operation](numberOne, numberTwo));
   return { question, correctAnswer };
