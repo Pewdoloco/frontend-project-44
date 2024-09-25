@@ -13,7 +13,7 @@
     Ubuntu 22.04.3 LTS
 
 Инструкция:
-1) выполнить: npm install -g .
+1) выполнить: npm ci .
 2) установите зависимости: npm ci 
 3) запуск одной из игр:
 brain-calc         brain-even         brain-games        brain-gcd          brain-prime        brain-progression
