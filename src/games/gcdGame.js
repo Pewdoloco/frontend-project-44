@@ -3,7 +3,10 @@ import getRandomNumber from '../gameUtils.js';
 
 const description = 'Find the greatest common divisor of given numbers';
 
-const findGcd = (numberOne, numberTwo) => {
+const findGcd = (numOne, numTwo) => {
+  let numberOne = numOne;
+  let numberTwo = numTwo;
+
   while (numberTwo !== 0) {
     const temp = numberOne % numberTwo;
     numberOne = numberTwo;
