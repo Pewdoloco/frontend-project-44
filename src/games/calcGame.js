@@ -1,11 +1,11 @@
-import gameEngine from "../gameEngine.js";
-import { getRandomNumber } from "../gameUtils.js";
+import gameEngine from '../gameEngine.js';
+import { getRandomNumber } from '../gameUtils.js';
 
-const description = "What is the result of the expression?";
+const description = 'What is the result of the expression?';
 const operations = {
-  "+": (a, b) => a + b,
-  "-": (a, b) => a - b,
-  "*": (a, b) => a * b,
+  '+': (a, b) => a + b,
+  '-': (a, b) => a - b,
+  '*': (a, b) => a * b,
 };
 
 const generateQuestionAndAnswer = () => {

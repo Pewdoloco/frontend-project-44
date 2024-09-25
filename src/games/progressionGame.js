@@ -1,6 +1,6 @@
-import gameEngine from "../gameEngine.js";
+import gameEngine from '../gameEngine.js';
 
-const description = "What number is missing in the progression?";
+const description = 'What number is missing in the progression?';
 
 const getRandomProgression = (startNumber, step) => {
   const progression = [];
@@ -16,8 +16,8 @@ const generateQuestionAndAnswer = () => {
   const progression = getRandomProgression(startNumber, step);
   const hiddenIndex = Math.floor(Math.random() * progression.length);
   const correctAnswer = String(progression[hiddenIndex]);
-  progression[hiddenIndex] = "..";
-  const question = progression.join(" ");
+  progression[hiddenIndex] = '..';
+  const question = progression.join(' ');
   return { question, correctAnswer };
 };
 
