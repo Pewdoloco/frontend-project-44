@@ -19,6 +19,8 @@ const generateQuestionAndAnswer = () => {
   return { question, correctAnswer };
 };
 
-export const startPrimeGame = () => {
+const startPrimeGame = () => {
   gameEngine(description, generateQuestionAndAnswer);
 };
+
+export default startPrimeGame;

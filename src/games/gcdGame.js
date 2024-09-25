@@ -20,6 +20,9 @@ const generateQuestionAndAnswer = () => {
 
   return { question, correctAnswer };
 };
-export const startGcdGame = () => {
+
+const startGcdGame = () => {
   gameEngine(description, generateQuestionAndAnswer);
 };
+
+export default startGcdGame;

@@ -21,6 +21,8 @@ const generateQuestionAndAnswer = () => {
   return { question, correctAnswer };
 };
 
-export const startProgressionGame = () => {
+const startProgressionGame = () => {
   gameEngine(description, generateQuestionAndAnswer);
 };
+
+export default startProgressionGame;

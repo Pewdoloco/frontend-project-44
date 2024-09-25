@@ -18,6 +18,8 @@ const generateQuestionAndAnswer = () => {
   return { question, correctAnswer };
 };
 
-export const startCalcGame = () => {
+const startCalcGame = () => {
   gameEngine(description, generateQuestionAndAnswer);
 };
+
+export default startCalcGame;
